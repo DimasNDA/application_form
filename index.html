@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Forms</title>
+	<link rel="stylesheet" href="libs/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<section class="section-menu">
+		<div class="menu">
+			<div class="logo"><img src="images/logo.png" alt=""></div>
+			<div class="logo-mini">
+				<img src="images/logo-mini.png" alt="">
+				<h3 class="text-logo">Адмін панель</h3>
+			</div>
+			<nav class="nav">
+				<ul>
+					<li>
+						<a class="icon icon1" href="#">Усі заявки</a>
+					</li>
+					<li>
+						<a class="icon icon2" href="#">Відхилені заявки</a>
+					</li>
+					<li>
+						<a class="icon icon3" href="#">Підтримані заявки</a>
+					</li>
+					<li>
+						<a class="icon icon4" href="#">Заявки зі статусом</a>
+					</li>
+					<li>
+						<a class="icon icon5" href="#">Внутрішня статистика</a>
+					</li>
+					<li>
+						<a class="icon icon6" href="#">Публічна статистика</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</section>
+		
+	
+	<section class="section">
+
+		<h1>Аплікаційна заявка</h1>
+		<hr>
+		<fomr class="form">
+
+			<div class="form-row">
+				<div class="form-col-1x">
+					<div class="input-form input-text">
+						<label>
+							<div class="label-text">Прізвище, ім'я та по батькові <span>*</span></div>
+							<div class="block-form">
+								<input type="text" required placeholder="ПІБ">
+								<a href="#"><img src="images/info.svg" alt=""></a>
+							</div>
+							
+						</label>
+					</div>
+				</div>
+				<div class="form-col-2x">
+					<div class="input-form input-select">
+						<label>
+							<div class="label-text">Стать <span>*</span></div>
+							<select required>
+								<option>Чоловіча</option>
+								<option>Жіноча</option>
+							</select>
+						</label>
+					</div>
+				</div>
+				<div class="form-col-2x">
+					<div class="input-form input-text">
+						<label>
+							<div class="label-text">Дата народження <span>*</span></div>
+							<input type="date" required placeholder="Дата">
+						</label>
+					</div>
+				</div>
+				<div class="form-col-1x">
+					<div class="input-form input-text">
+						<label>
+							<div class="label-text">РНОКПП або серія та номер паспорта <span>*</span></div>
+							<div class="block-form">
+								<input type="text" required placeholder="НВ19876954">
+								<a href="#"><img src="images/info.svg" alt=""></a>
+							</div>
+							
+						</label>
+					</div>
+				</div>
+			</div>
+			<h2>Адреса реєстрації:</h2>
+			<div class="form-row">		
+				<div class="form-col-2x">
+					<div class="input-form input-select">
+						<label>
+							<div class="label-text">Область <span>*</span></div>
+							<select required>
+								<option selected="selected">Виберіть область</option>
+								<option>Область 1</option>
+								<option>Область 2</option>
+								<option>Область 3</option>
+								<option>Область 4</option>
+								<option>Область 5</option>
+								<option>Область 6</option>
+							</select>
+						</label>
+					</div>
+				</div>
+				<div class="form-col-2x">
+					<div class="input-form input-select">
+						<label>
+							<div class="label-text">Район <span>*</span></div>
+							<select required>
+								<option selected="selected">Виберіть область</option>
+								<option>Район 11</option>
+								<option>Район 22</option>
+								<option>Район 33</option>
+								<option>Район 44</option>
+								<option>Район 55</option>
+								<option>Район 66</option>
+								<option>Район 77</option>
+								<option>Район 88</option>
+							</select>
+						</label>
+					</div>
+				</div>
+				<div class="form-col-2x">
+					<div class="input-form input-select">
+						<label>
+							<div class="label-text">ОТГ <span>*</span></div>
+							<select required>
+								<option selected="selected">Виберіть ОТГ</option>
+								<option>ОТГ 1</option>
+								<option>ОТГ 2</option>
+								<option>ОТГ 3</option>
+							</select>
+						</label>
+					</div>
+				</div>
+				<div class="form-col-2x">
+					<div class="input-form input-select">
+						<label>
+							<div class="label-text">Населений пункт <span>*</span></div>
+							<select required>
+								<option selected="selected">Виберіть населений пункт</option>
+								<option>Місто</option>
+								<option>СМТ</option>
+								<option>Село</option>
+								<option>Селище</option>
+							</select>
+						</label>
+					</div>
+				</div>
+				<div class="form-col-2x">
+					<div class="input-form input-select">
+						<label>
+							<div class="label-text">Тип вулиці <span>*</span></div>
+							<select required>
+								<option selected="selected">Виберіть тип вулиці</option>
+								<option>вулиця</option>
+								<option>проспет</option>
+								<option>провулок</option>
+							</select>
+						</label>
+					</div>
+				</div>
+				<div class="form-col-2x">
+					<div class="input-form input-text">
+						<label>
+							<div class="label-text">Назва вулиці <span>*</span></div>
+							<input type="text" required placeholder="Введіть назву вулиці">
+						</label>
+					</div>
+				</div>
+				<div class="form-col-2x">
+					<div class="input-form input-text">
+						<label>
+							<div class="label-text">Номер будинку <span>*</span></div>
+							<input type="text" required placeholder="Введіть номер будинку">
+						</label>
+					</div>
+				</div>
+				<div class="form-col-2x">
+					<div class="input-form input-text">
+						<label>
+							<div class="label-text">Номер квартири</div>
+							<input type="text" placeholder="Введіть номер квартири">
+						</label>
+					</div>
+				</div>
+				<div class="form-col-1x">
+					<div class="input-form input-text">
+						<label>
+							<div class="label-text">Індекс <span>*</span></div>
+							<input type="text" required placeholder="20000">
+						</label>
+					</div>
+				</div>
+			</div>
+			<hr class="border-bottom">
+			<h2>Форма здійснення господарської діяльності <span>*</span>:</h2>
+			<div class="form-row">		
+				<div class="form-col-2x input-check-rigth">
+					<div class="input-form input-check">
+						<label class="check-control">
+							<input type="checkbox">
+							<span class="indicator"></span>
+							<p class="check">Фізична особа-підприємець</p>
+						</label>
+					</div>
+				</div>
+				<div class="form-col-2x input-check-rigth">
+					<div class="input-form input-check">
+						<label class="check-control">
+							<input type="checkbox">
+							<span class="indicator"></span>
+							<p class="check">Інша категорія самозайнятої особи</p>
+						</label>
+					</div>
+				</div>
+				<div class="form-col-1x">
+					<div class="input-form input-text input-text-big">
+						<label>
+							<div class="label-text">Опис здійснюваної господарської діяльності:</div>
+							<textarea placeholder="Введіть текст"></textarea>
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="form-col-2x">
+					<div class="input-form input-text">
+						<label>
+							<div class="label-text">Назва банку <span>*</span></div>
+							<input type="text" required placeholder="Приватбанк">
+						</label>
+					</div>
+				</div>
+				<div class="form-col-2x">
+					<div class="input-form input-text">
+						<label>
+							<div class="label-text">Рахунок у форматі IBAN <span>*</span></div>
+							<input type="text" required placeholder="UA45667878900000876543322">
+						</label>
+					</div>
+				</div>
+				<div class="form-col-1x">
+					<div class="input-form input-text">
+						<label>
+							<div class="label-text">Адреса для листування <span>*</span></div>
+							<input type="text" required placeholder="Адреса">
+						</label>
+					</div>
+				</div>
+				<div class="form-col-2x">
+					<div class="input-form input-text">
+						<label>
+							<div class="label-text">E-mail <span>*</span></div>
+							<input type="email" required placeholder="Sjobs@mail.com">
+						</label>
+					</div>
+				</div>
+				<div class="form-col-2x">
+					<div class="input-form input-text">
+						<label>
+							<div class="label-text">Повторіть будь ласка E-mail <span>*</span></div>
+							<input type="email" required placeholder="Sjobs@mail.com">
+						</label>
+					</div>
+				</div>
+				<div class="form-col-1x">
+					<div class="input-form input-text">
+						<label>
+							<div class="label-text">Контактний телефон <span>*</span></div>
+							<input type="tel" required placeholder="80 (_ _)_ _ _ _ _ _ _">
+						</label>
+					</div>
+				</div>
+			</div>
+			<hr class="border-bottom">
+			<h2>До якої категорії осіб Ви відноситесь <span>*</span>:</h2>
+			<div class="form-row">	
+				<div class="form-col-1x">
+					<div class="input-form input-check">
+						<label class="radio-control">
+							<input type="radio" name="radio-check">
+							<span class="indicator"></span>
+							<div class="text-check">
+								<p class="check-blue"">Категорія А</p>
+								<p class="text">Члени сімей ветеранів, які беруть участь у відсічі збройної агресії та забезпечення 
+								національної безпеки, усунення загрози небезпеки державній незалежності України, 
+								її територіальній цілісності, у тому числі у складі добровольчих формуваннях 
+								територіальних громад, в період дії воєнного стану</p>
+							</div>
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="form-col-1x">
+					<div class="input-form input-check">
+						<label class="radio-control">
+							<input type="radio" name="radio-check">
+							<span class="indicator"></span>
+							<div class="text-check">
+								<p class="check-blue">Категорія Б</p>
+								<p class="text">Ветерани та члени їх сімей, діяльність яких як самозайнятих осіб тимчасово зупинена 
+									внаслідок проведення бойових дій на території адміністративно-територіальних 
+									одиниць, перелік яких затверджений Кабінетом Міністрів України</p>
+							</div>
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="form-col-1x">
+					<div class="input-form input-text input-text-big">
+						<label>
+							<div class="label-text">Вкажіть родинні зв’язки:</div>
+							<textarea placeholder="Введіть текст"></textarea>
+						</label>
+					</div>
+				</div>
+				<div class="form-col-1x">
+					<div class="input-form input-text input-text-big">
+						<label>
+							<div class="label-text">На що саме потрібні кошти: <span>*</span></div>
+							<textarea required placeholder="Введіть текст"></textarea>
+						</label>
+					</div>
+				</div>
+				<div class="form-col-1x">
+					<div class="input-form input-text">
+						<label>
+							<div class="label-text">Вкажіть суму <span>*</span></div>
+							<input type="text" required required placeholder="100 000 грн">
+						</label>
+					</div>
+				</div>
+			</div>
+			<hr class="border-bottom">
+			<div class="block">
+				<h2>Завантажити скани/фото документі <span>*</span>:</h2>
+				<a href="#"><img src="images/info.svg" alt=""></a>
+			</div>
+			<div class="form-row">
+				<div class="form-col-1x">
+					<div class="input-form input-file">
+						<label>
+							<div class="label-file">Документ, що посвідчує особу громадянина України: <span>*</span></div>
+							<div class="block-file">
+								<input type="file" required placeholder="ПІБ">
+								<div class="download">
+									<img src="images/download.svg" alt="">
+									<p class="file">Перетягніть файл сюди , або натисніть щоб завантажити</p>
+								</div>
+							</div>
+							
+						</label>
+					</div>
+				</div>
+				<div class="form-col-1x">
+					<div class="input-form input-file">
+						<label>
+							<div class="label-file">Документ про набуття статусу підприємця фізичною особою (для фізичних осіб-
+								підприємців) АБО Документ про взяття на облік самозайнятої особи: <span>*</span></div>
+							<div class="block-file">
+								<input type="file" required placeholder="ПІБ">
+								<div class="download">
+									<img src="images/download.svg" alt="">
+									<p class="file">Перетягніть файл сюди , або натисніть щоб завантажити</p>
+								</div>
+							</div>
+							
+						</label>
+					</div>
+				</div>
+				<div class="form-col-1x">
+					<div class="input-form input-file">
+						<label>
+							<div class="label-file">Документ, що підтверджує один із статусів ветерана війни, особи, яка має особливі 
+								заслуги перед Батьківщиною, постраждалого учасника Революції Гідності, члена 
+								сім’ї загиблого (померлого) Захисника чи Захисниці України або належність до 
+								членів сім’ї ветерана: <span>*</span></div>
+							<div class="block-file">
+								<input type="file" required placeholder="ПІБ">
+								<div class="download">
+									<img src="images/download.svg" alt="">
+									<p class="file">Перетягніть файл сюди , або натисніть щоб завантажити</p>
+								</div>
+							</div>
+							
+						</label>
+					</div>
+				</div>
+				<div class="form-col-1x">
+					<div class="input-form input-file">
+						<label>
+							<div class="label-file">Документ, що підтверджує взяття особи на облік внутрішньо переміщеної особи: <span>*</span></div>
+							<div class="block-file">
+								<input type="file" required placeholder="ПІБ">
+								<div class="download">
+									<img src="images/download.svg" alt="">
+									<p class="file">Перетягніть файл сюди , або натисніть щоб завантажити</p>
+								</div>
+							</div>
+							
+						</label>
+					</div>
+				</div>
+				<div class="form-col-1x">
+					<div class="input-form input-file">
+						<label>
+							<div class="label-file">Документ, про понесення фактичних витрат, пов’язаних із здійсненням 
+								підприємницької або незалежної професійної діяльності самозайнятою особою, які 
+								можуть бути відшкодовані за рахунок Фонду: <span>*</span></div>
+							<div class="block-file">
+								<input type="file" required placeholder="ПІБ">
+								<div class="download">
+									<img src="images/download.svg" alt="">
+									<p class="file">Перетягніть файл сюди , або натисніть щоб завантажити</p>
+								</div>
+							</div>
+							
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="form-col-1x">
+					<div class="input-form input-check">
+						<label class="check-control">
+							<input type="checkbox">
+							<span class="indicator"></span>
+							<p class="text">Поданням заяви ви засвідчуєте, що ознайомленні з приписами «Порядку 
+								використання коштів бюджетною установою <a href="#">«Український ветеранський фонд»</a>
+								у період дії воєнного стану»</p>								
+						</label>
+					</div>
+				</div>
+				<div class="form-col-1x">
+					<div class="input-form input-check">
+						<label class="check-control">
+							<input type="checkbox">
+							<span class="indicator"></span>
+							<p class="text">Поданням заяви ви засвідчуєте достовірність поданих документів.</p>								
+						</label>
+					</div>
+				</div>
+				<div class="form-col-1x">
+					<div class="input-form input-check">
+						<label class="check-control">
+							<input type="checkbox">
+							<span class="indicator"></span>
+							<p class="text">Поданням заяви ви надаєте УВФ свою згоду на обробку ваших персональних 
+								даних.</p>
+						</label>
+					</div>
+				</div>
+				<div class="form-col-1x">
+					<div class="input-form input-check">
+						<label class="check-control">
+							<input type="checkbox">
+							<span class="indicator"></span>
+							<p class="text">Поданням заяви ви надаєте УВФ згоду проведення фото та відео фіксації вас та 
+								процесу вашої господарської діяльності з метою підготовки УВФ звіту про 
+								виділені кошти.
+								</p>
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="form-row">
+				<button type="submit" class="btn">реєстрація</button>
+			</div>
+			
+		</fomr>
+
+	</section>
+
+</body>
+</html>
